@@ -5,6 +5,11 @@
     <title>Dashboard | ECOWATT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+        <script>
+        function logout() {
+            window.location.href = "signin.html";
+        }
+    </script>
 </head>
 <body>
 
@@ -42,18 +47,13 @@
         </li>
         
         <li>
-            <a href="#">
+            <a href="https://ecowatt-elec.github.io/ecowatt-elec/#home">
                 <i class="fas fa-pen"></i>
                 <p>Posts</p>
             </a>
         </li>
         
-        <li>
-            <a href="#">
-                <i class="fas fa-star"></i>
-                <p>Favorite</p>
-            </a>
-        </li>
+
         
         <li>
             <a href="https://ecowatt-elec.github.io/ecowatt-elec/#home">
@@ -63,7 +63,7 @@
         </li>
         
         <li class="log-out">
-            <a href="#">
+<a href="javascript:void(0)" onclick="logout()">
                 <i class="fas fa-sign-out"></i>
                 <p>Log Out</p>
             </a>
