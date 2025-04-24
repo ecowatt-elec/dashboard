@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <title>Sign In | ECOWATT</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+
+        function validateLogin(event) {
+            event.preventDefault(); 
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+
+            const correctUsername = "admin";
+            const correctPassword = "ecowatt-future";
+
+
+            if (username === correctUsername && password === correctPassword) {
+
+                window.location.href = "dashboard.html";
+            } else {
+
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="signin-container">
         <h2>Sign In</h2>
-        <form action="dashboard.html" method="POST">
+        <form onsubmit="validateLogin(event)">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
