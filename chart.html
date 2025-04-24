@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts | ECOWATT</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Add Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        /* Styling for the chart container */
+        .chart-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #123;
+            border-radius: 8px;
+        }
+
+        canvas {
+            width: 100% !important;
+            height: 400px !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar Menu -->
+<div class="menu">
+    <ul>
+        <li class="profile">
+            <div class="img-box">
+                <img src="LOGO.jpeg" alt="profile">
+            </div>
+            <br>
+            <h2>Menu</h2>
+        </li>
+        
+        <li>
+            <a href="dashboard.html">
+                <i class="fas fa-home"></i>
+                <p>Dashboard</p>
+            </a>
+        </li>
+    
+        <li>
+            <a href="clients.html">
+                <i class="fas fa-user-group"></i>
+                <p>Clients</p>
+            </a>
+        </li>
+        
+        <li>
+            <a class="active" href="chart.html">
+                <i class="fas fa-chart-pie"></i>
+                <p>Charts</p>
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://ecowatt-elec.github.io/ecowatt-elec/#home">
+                <i class="fas fa-pen"></i>
+                <p>Posts</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://ecowatt-elec.github.io/ecowatt-elec/#home">
+                <i class="fas fa-cog"></i>
+                <p>Settings</p>
+            </a>
+        </li>
+        
+        <li class="log-out">
+            <a href="javascript:void(0)" onclick="logout()">
