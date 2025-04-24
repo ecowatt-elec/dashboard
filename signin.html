@@ -7,24 +7,24 @@
     <script>
 
         function validateLogin(event) {
-            event.preventDefault(); 
+    event.preventDefault(); 
 
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    const correctUsername = "admin";
+    const correctPassword = "ecowatt-future";
 
 
-            const correctUsername = "admin";
-            const correctPassword = "ecowatt-future";
+    if (username === correctUsername && password === correctPassword) {
 
+        window.location.href = "https://ecowatt-elec.github.io/dashboard/#";
+    } else {
 
-            if (username === correctUsername && password === correctPassword) {
+        alert("Incorrect username or password. Please try again.");
+    }
+}
 
-                window.location.href = "dashboard.html";
-            } else {
-
-                alert("Incorrect username or password. Please try again.");
-            }
-        }
     </script>
 </head>
 <body>
